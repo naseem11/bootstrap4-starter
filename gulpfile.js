@@ -50,7 +50,7 @@ gulp.task('serve', function(){
    });
    
     
-    gulp.watch(STYLES_PATH,['sass']);
+    gulp.watch([STYLES_PATH,'node_modules/bootstrap/scss/bootstrap.scss'],['sass']);
     gulp.watch('src/*.html').on('change',browserSync.reload);
    
    
